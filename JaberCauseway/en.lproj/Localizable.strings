@@ -1,0 +1,13 @@
+/* 
+  Localization.strings
+  JaberCauseway
+
+  Created by Ammar Al-Helali on 8/10/19.
+  Copyright © 2019 Ammar Al-Helali. All rights reserved.
+*/
+
+ /*sign in*/
+"Sign in" = "Loging in...";
+"Cancel" = "Cancel";
+"Ok" = "Ok";
+

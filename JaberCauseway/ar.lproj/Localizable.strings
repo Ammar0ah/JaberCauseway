@@ -1,0 +1,31 @@
+/* 
+  Localization.strings
+  JaberCauseway
+
+  Created by Ammar Al-Helali on 8/10/19.
+  Copyright © 2019 Ammar Al-Helali. All rights reserved.
+*/
+"User Name" = "اسم المستخدم ";
+"Password" = "كلمة السر";
+"Sign in" = "...جاري تسجيل الدخول";
+"Cancel" = "إلغاء";
+"Ok" = "موافق";
+"Login" = "تسجيل الدخول";
+"User Not Registered" = "المستخدم غير مسجل";
+"Invalid Password" = "كلمة مرور خاطئة";
+"Unfilled Fields" = "املأ الحقول الفارغة";
+"Connection Error" = "خطأ في الاتصال";
+"Success" = "تم";
+"Exit the App?" = "هل تود الخروج؟";
+"Asset Group No" = "رقم مرجع الأصل";
+"press ok to proceed" = "اضغط موافق للتأكيد";
+"Hotspot No" = "رقم المرجع اللحظي";
+"Document Search" = "بحث الوثائق";
+"Document Name" = "اسم الوثيقة";
+"Discipline:" = "اختصاص الوثيقة:";
+"Type:" = "نوع الوثيقة:";
+"Scanning not supported" = "المسح غير مدعوم";
+"Your device does not support scanning a code from an item. Please use a device with a camera." = "جهازك لايدعم  مسح الرموز. يرجى استخدام جهاز يدعم ذلك";
+"Documents Search" = "بحث المستندات";
+"Sheikh Jaber Causeway Project (RA 140)" = "مشروع جسر الشيخ جابر (RA 140)";
+"Search Results" = "نتائج البحث";

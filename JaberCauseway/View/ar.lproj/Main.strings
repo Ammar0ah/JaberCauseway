@@ -1,0 +1,36 @@
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "3Oa-ay-nIZ"; */
+"3Oa-ay-nIZ.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "7za-hz-0RA"; */
+"7za-hz-0RA.placeholder" = "User Name";
+
+/* Class = "UITextField"; text = "Hotspot No"; ObjectID = "7za-hz-0RA"; */
+"7za-hz-0RA.text" = "Hotspot No";
+
+/* Class = "UILabel"; text = "Sheikh Jaber Causeway Project (RA 140)"; ObjectID = "FgW-L5-B6s"; */
+"FgW-L5-B6s.text" = "Sheikh Jaber Causeway Project (RA 140)";
+
+/* Class = "UILabel"; text = "Documents Search"; ObjectID = "H0W-wI-ucB"; */
+"H0W-wI-ucB.text" = "Documents Search";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "HHR-xP-Nca"; */
+"HHR-xP-Nca.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "عربي"; ObjectID = "PZu-we-bgd"; */
+"PZu-we-bgd.normalTitle" = "عربي";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "RJh-YH-2G8"; */
+"RJh-YH-2G8.placeholder" = "User Name";
+
+/* Class = "UITextField"; text = "Asset Group No"; ObjectID = "Y3m-hn-5Ub"; */
+"Y3m-hn-5Ub.text" = "رقم مرجع الأ";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "xbU-0p-roM"; */
+"xbU-0p-roM.placeholder" = "User Name";
+
+/* Class = "UITextField"; text = "Document Name"; ObjectID = "xbU-0p-roM"; */
+"xbU-0p-roM.text" = "Document Name";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "xzd-wl-Brp"; */
+"xzd-wl-Brp.normalTitle" = "English";
