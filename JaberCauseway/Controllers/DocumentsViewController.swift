@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class DocumentsViewController: UIViewController  , QRcode{
    
     @IBOutlet var documentSearchLbl: UILabel!
@@ -23,24 +23,27 @@ class DocumentsViewController: UIViewController  , QRcode{
         super.viewDidLoad()
                rtl()
         if ISARABIC {
-            self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
-            assetGroup.placeholder = assetGroup.placeholder?.localized()
-            assetGroup.placeHolderColor = .black
-            hostpot.placeholder = hostpot.placeholder?.localized()
-            hostpot.placeHolderColor = .black
-            document.placeholder = document.placeholder?.localized()
-            document.placeHolderColor = .black
-            documentSearchLbl.text = documentSearchLbl.text?.localized()
+           arrangeViewForArabic()
         }
         assetGroup.becomeFirstResponder()
       
        
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapEvent))
         self.view.addGestureRecognizer(gesture)
     }
-  
+    func arrangeViewForArabic(){
+        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
+        assetGroup.placeholder = assetGroup.placeholder?.localized()
+        assetGroup.placeHolderColor = .black
+        hostpot.placeholder = hostpot.placeholder?.localized()
+        hostpot.placeHolderColor = .black
+        document.placeholder = document.placeholder?.localized()
+        document.placeHolderColor = .black
+        documentSearchLbl.text = documentSearchLbl.text?.localized()
+    }
     @IBAction func exitClicked(_ sender: Any) {
         //print("MyString".localized("en"))
         let alert = UIAlertController(title: "Exit the App?".localized(), message: "press ok to proceed".localized(), preferredStyle: .alert)
@@ -56,10 +59,12 @@ class DocumentsViewController: UIViewController  , QRcode{
     
    
     @IBAction func searchClicked(_ sender: Any) {
+        SVProgressHUD.show()
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "detailsViewController") as? DetailsViewController else {return}
 
         if reqTextField == hostpot ||  reqTextField == assetGroup {
             request.getHotspots(hotspotGroup: assetGroup.text ?? "", hotspotNo: hostpot.text ?? ""){
+                SVProgressHUD.dismiss()
                 vc.hotspots = self.request.hotspot
                 vc.discipline = self.request.discipline
                      vc.discipline?.DisciplinesObj.insert(DisciplinesObject(DisciplineID: "", DisciplineName: "All"), at: 0)
@@ -70,6 +75,7 @@ class DocumentsViewController: UIViewController  , QRcode{
         else if reqTextField == document{
       
         request.getDocuments(hotspotNo: hostpot.text ?? ""){
+            SVProgressHUD.dismiss()
           self.performSegue(withIdentifier: "documentsearchSegue", sender: self)
         }
       
@@ -79,9 +85,11 @@ class DocumentsViewController: UIViewController  , QRcode{
         
     }
     func getQRcode(code: String) {
+        SVProgressHUD.show()
         hostpot.text = code
         print("Code" , code)
         request.getDocuments(hotspotNo: hostpot.text ?? ""){
+            SVProgressHUD.dismiss()
             self.performSegue(withIdentifier: "documentsearchSegue", sender: self)
         }
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class DetailsViewController: UIViewController {
     var discipline : Discipline!
@@ -30,13 +31,15 @@ class DetailsViewController: UIViewController {
         tempHotspot = hotspots.HotspotsObj
         // Do any additional setup after loading the view.
         localizeArabic()
+     
+        
     }
     func localizeArabic(){
         searchResultLbl.text = searchResultLbl.text?.localized()
         relatedHotspots.text = relatedHotspots.text?.localized()
         disciplineLbl.text = disciplineLbl.text?.localized()
     }
-    
+
 }
 
 extension DetailsViewController : UIPickerViewDelegate , UIPickerViewDataSource {
@@ -85,12 +88,13 @@ extension DetailsViewController : UITableViewDelegate , UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        SVProgressHUD.show()
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "itemDetailsViewController") as? ItemDetailsViewController else {return}
         
         if identifier != "All"{
             let tempNo = tempHotspot?[indexPath.row].HotspotNo
             request.getDocuments(hotspotNo: tempNo ?? ""){
-                
+                SVProgressHUD.dismiss()
                 vc.docsTypes = self.request.docsTypes
                 vc.document = self.request.document
                 vc.docsTypes.DocumentsObj.insert(DocsObj(DocumentTypeID: "", DocumentTypeName: "All"), at: 0)
@@ -99,7 +103,7 @@ extension DetailsViewController : UITableViewDelegate , UITableViewDataSource {
         }else {
             let hotspotNo =  hotspots.HotspotsObj[indexPath.row].HotspotNo
             request.getDocuments(hotspotNo : hotspotNo ){
-                
+                SVProgressHUD.dismiss()
                 vc.docsTypes = self.request.docsTypes
                 vc.document = self.request.document
                 vc.docsTypes.DocumentsObj.insert(DocsObj(DocumentTypeID: "", DocumentTypeName: "All"), at: 0)

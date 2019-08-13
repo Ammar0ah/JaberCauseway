@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import SVProgressHUD
 class ItemDetailsViewController: UIViewController {
     var docsTypes : DocumentTypes!
     var document : Documents!
@@ -17,29 +18,29 @@ class ItemDetailsViewController: UIViewController {
     @IBOutlet var typesPickerView: UIPickerView!
     @IBOutlet var searchResultLbl: UILabel!
     @IBOutlet var relatedHotspot: UILabel!
-    
     @IBOutlet var documentsTxtField: customTextField!
     @IBOutlet var searchField: customTextField!
     @IBOutlet var itemstableView: UITableView!
     @IBOutlet var typeLbl: UILabel!
+
+ 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+
         identifier = "All"
+      
+            super.init(coder: aDecoder)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         searchField.addTarget(self, action: #selector(textChanged(_:)), for: .editingChanged)
         // Do any additional setup after loading the view.
         localizeArabic()
-        itemstableView.delegate = self
-        itemstableView.dataSource = self
+        
         documentsTxtField.text = documentsTxt
         if let doctxt = documentsTxt     {
             searchFilter(sender: doctxt)
         }
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapEvent))
-       // self.view.addGestureRecognizer(gesture)
-        
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -165,12 +166,10 @@ extension ItemDetailsViewController : UITableViewDelegate, UITableViewDataSource
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let window = UIApplication.shared.keyWindow!
+       let wkWebView =  WKWebView(frame:CGRect(x: 0, y: window.safeAreaInsets.top + 50, width: screenBounds.width, height:  screenBounds.height))
         itemstableView.deselectRow(at: indexPath, animated: true)
         let fileView = UIViewController()
-        let window = UIApplication.shared.keyWindow!
-        
-        let wkWebView = WKWebView(frame:CGRect(x: 0, y: window.safeAreaInsets.top + 50, width: screenBounds.width, height:  screenBounds.height))
-        
         let url = URL(string: document.DocumentsObj[indexPath.row].DocumentPath)!
         let urlRequest = URLRequest(url: url)
         wkWebView.load(urlRequest)
@@ -179,7 +178,7 @@ extension ItemDetailsViewController : UITableViewDelegate, UITableViewDataSource
         navigationController?.navigationBar.tintColor = .white
         navigationController?.pushViewController(fileView, animated: true)
     }
-    
+   
     
 }
 
