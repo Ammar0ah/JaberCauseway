@@ -44,7 +44,8 @@ class LoginViewController: UIViewController {
         password.placeholder = password.placeholder?.localized()
         password.placeHolderColor = .black
         label.text = label.text?.localized()
-        loginBttn.titleLabel?.text =  loginBttn.titleLabel?.text?.localized()
+        
+        loginBttn.setTitle(loginBttn.titleLabel?.text?.localized(), for: .normal)   
         
     }
     

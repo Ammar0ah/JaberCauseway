@@ -31,7 +31,7 @@ class DetailsViewController: UIViewController {
         tempHotspot = hotspots.HotspotsObj
         // Do any additional setup after loading the view.
         localizeArabic()
-     
+        
         
     }
     func localizeArabic(){
@@ -39,7 +39,7 @@ class DetailsViewController: UIViewController {
         relatedHotspots.text = relatedHotspots.text?.localized()
         disciplineLbl.text = disciplineLbl.text?.localized()
     }
-
+    
 }
 
 extension DetailsViewController : UIPickerViewDelegate , UIPickerViewDataSource {
@@ -77,8 +77,11 @@ extension DetailsViewController : UITableViewDelegate , UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if identifier != "All"{
             cell.textLabel?.text = tempHotspot?[indexPath.row].HotspotNo
+            cell.detailTextLabel?.text = tempHotspot?[indexPath.row].HotspotExpression
         }
-        else {  cell.textLabel?.text = hotspots.HotspotsObj[indexPath.row].HotspotNo
+        else {
+            cell.textLabel?.text = hotspots.HotspotsObj[indexPath.row].HotspotNo
+            cell.detailTextLabel?.text = hotspots.HotspotsObj[indexPath.row].HotspotExpression
         }
         return cell
     }

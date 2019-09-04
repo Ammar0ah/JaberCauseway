@@ -18,7 +18,7 @@ class customTextField : UITextField {
         self.layer.borderColor = UIColor(hexString: "#34BE9CFF").cgColor
         self.backgroundColor = UIColor(hexString: "#2F9994")
         self.layer.borderWidth = width
-        
+    
      //   self.layer.masksToBounds = true
         self.layer.cornerRadius = 15
     }
@@ -30,4 +30,5 @@ class customTextField : UITextField {
     override init(frame: CGRect) {
         super.init(frame: CGRect())
     }
+  
 }

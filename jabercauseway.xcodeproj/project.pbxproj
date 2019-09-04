@@ -36,7 +36,7 @@
 		AC250BEC22FF5E5100F9694A /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		AC2F3D9F23005EC200765B2C /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		AC43A51F230134C00031D3CB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		AC6A704F22FDBDD500A82458 /* JaberCauseway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JaberCauseway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6A704F22FDBDD500A82458 /* jabercauseway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jabercauseway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6A705222FDBDD500A82458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6A705422FDBDD500A82458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC6A705722FDBDD500A82458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		AC6A705022FDBDD500A82458 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC6A704F22FDBDD500A82458 /* JaberCauseway.app */,
+				AC6A704F22FDBDD500A82458 /* jabercauseway.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC6A704E22FDBDD500A82458 /* JaberCauseway */ = {
+		AC6A704E22FDBDD500A82458 /* jabercauseway */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC6A706122FDBDD600A82458 /* Build configuration list for PBXNativeTarget "JaberCauseway" */;
+			buildConfigurationList = AC6A706122FDBDD600A82458 /* Build configuration list for PBXNativeTarget "jabercauseway" */;
 			buildPhases = (
 				57A3B038A886E6056FAC2DF4 /* [CP] Check Pods Manifest.lock */,
 				AC6A704B22FDBDD500A82458 /* Sources */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = JaberCauseway;
+			name = jabercauseway;
 			productName = JaberCauseway;
-			productReference = AC6A704F22FDBDD500A82458 /* JaberCauseway.app */;
+			productReference = AC6A704F22FDBDD500A82458 /* jabercauseway.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC6A704A22FDBDD500A82458 /* Build configuration list for PBXProject "JaberCauseway" */;
+			buildConfigurationList = AC6A704A22FDBDD500A82458 /* Build configuration list for PBXProject "jabercauseway" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -224,7 +224,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC6A704E22FDBDD500A82458 /* JaberCauseway */,
+				AC6A704E22FDBDD500A82458 /* jabercauseway */,
 			);
 		};
 /* End PBXProject section */
@@ -471,14 +471,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68JGD4NLPA;
+				DEVELOPMENT_TEAM = R74AP992LY;
 				INFOPLIST_FILE = JaberCauseway/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ammar0ah.JaberCauseway;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fouad.penguen.sheikh-jaber-casueway";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,14 +491,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68JGD4NLPA;
+				DEVELOPMENT_TEAM = R74AP992LY;
 				INFOPLIST_FILE = JaberCauseway/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ammar0ah.JaberCauseway;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fouad.penguen.sheikh-jaber-casueway";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC6A704A22FDBDD500A82458 /* Build configuration list for PBXProject "JaberCauseway" */ = {
+		AC6A704A22FDBDD500A82458 /* Build configuration list for PBXProject "jabercauseway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC6A705F22FDBDD600A82458 /* Debug */,
@@ -517,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC6A706122FDBDD600A82458 /* Build configuration list for PBXNativeTarget "JaberCauseway" */ = {
+		AC6A706122FDBDD600A82458 /* Build configuration list for PBXNativeTarget "jabercauseway" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC6A706222FDBDD600A82458 /* Debug */,

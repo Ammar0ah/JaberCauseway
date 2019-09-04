@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JaberCauseway/Controllers/DetailsViewController.swift"
-            timestampString = "587430143.8724329"
+            timestampString = "587998213.733345"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "DetailsViewController"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JaberCauseway/Controllers/DetailsViewController.swift"
-            timestampString = "587430143.872524"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkName = "pickerView(_:titleForRow:forComponent:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,75 +41,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JaberCauseway/Controllers/DocumentsViewController.swift"
-            timestampString = "587430143.872629"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "DocumentsViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "JaberCauseway.DocumentsViewController.request.getter : JaberCauseway.Request"
-                  moduleName = "JaberCauseway"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ammar0ah/Desktop/JaberCauseway/JaberCauseway/Controllers/DocumentsViewController.swift"
-                  timestampString = "587404101.048161"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "JaberCauseway.DocumentsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; JaberCauseway.DocumentsViewController"
-                  moduleName = "JaberCauseway"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ammar0ah/Desktop/JaberCauseway/JaberCauseway/Controllers/DocumentsViewController.swift"
-                  timestampString = "587404101.053346"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "621">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "JaberCauseway.DocumentsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;JaberCauseway.DocumentsViewController&gt;"
-                  moduleName = "JaberCauseway"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ammar0ah/Desktop/JaberCauseway/JaberCauseway/Controllers/DocumentsViewController.swift"
-                  timestampString = "587404101.055645"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "535">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "JaberCauseway/Controllers/ItemDetailsViewController.swift"
-            timestampString = "587430143.8727"
+            timestampString = "589171717.798664"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "searchFilter(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -137,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JaberCauseway/Controllers/ItemDetailsViewController.swift"
-            timestampString = "587430143.87324"
+            timestampString = "589171717.799214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "pickerView(_:didSelectRow:inComponent:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -35,7 +35,7 @@ class ItemDetailsViewController: UIViewController {
         searchField.addTarget(self, action: #selector(textChanged(_:)), for: .editingChanged)
         // Do any additional setup after loading the view.
         localizeArabic()
-        
+     
         documentsTxtField.text = documentsTxt
         if let doctxt = documentsTxt     {
             searchFilter(sender: doctxt)
@@ -45,6 +45,8 @@ class ItemDetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.tintColor = UIColor(hexString: "#2F9994")
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        SVProgressHUD.dismiss()
     }
     func localizeArabic(){
         searchResultLbl.text = searchResultLbl.text?.localized()
@@ -72,6 +74,7 @@ extension ItemDetailsViewController : UITextFieldDelegate {
         
         itemstableView.reloadData()
     }
+   
     func searchFilter(sender:String ){
         identifier = "Search"
         let index = typesPickerView.selectedRow(inComponent: 0)
@@ -79,20 +82,18 @@ extension ItemDetailsViewController : UITextFieldDelegate {
         tempdocs =  document.DocumentsObj.filter{obj -> Bool in
             let lower =  obj.DocumentTitle.lowercased()
             if type.isEmpty {
+                if sender.isEmpty{
+                    identifier = "All"
+                    return true
+                }
                 return lower.contains(sender)
-            }else  if sender.isEmpty{
+            }
+            else  if sender.isEmpty{
+          
                 return obj.DocumentDisciplineID == type}
             else
             {
                 return lower.contains(sender) && obj.DocumentDisciplineID == type
-            }
-            
-        }
-        if tempdocs!.isEmpty {
-            if type.isEmpty {
-                identifier = "All"
-            }else {
-                identifier = type
             }
             
         }
@@ -136,7 +137,7 @@ extension ItemDetailsViewController : UIPickerViewDelegate , UIPickerViewDataSou
     
     
 }
-extension ItemDetailsViewController : UITableViewDelegate, UITableViewDataSource {
+extension ItemDetailsViewController : UITableViewDelegate, UITableViewDataSource ,WKNavigationDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return identifier == "All" ? document.DocumentsObj.count : tempdocs!.count
     }
@@ -168,9 +169,18 @@ extension ItemDetailsViewController : UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let window = UIApplication.shared.keyWindow!
        let wkWebView =  WKWebView(frame:CGRect(x: 0, y: window.safeAreaInsets.top + 50, width: screenBounds.width, height:  screenBounds.height))
+        wkWebView.navigationDelegate = self
         itemstableView.deselectRow(at: indexPath, animated: true)
         let fileView = UIViewController()
-        let url = URL(string: document.DocumentsObj[indexPath.row].DocumentPath)!
+        let path : String?
+        if  identifier == "All"{
+            path = document.DocumentsObj[indexPath.row].DocumentPath
+          
+        }else{
+            path = tempdocs?[indexPath.row].DocumentPath
+        }
+        
+        let url = URL(string:path!)!
         let urlRequest = URLRequest(url: url)
         wkWebView.load(urlRequest)
         fileView.view.backgroundColor = UIColor(hexString: "#808080")
@@ -178,7 +188,14 @@ extension ItemDetailsViewController : UITableViewDelegate, UITableViewDataSource
         navigationController?.navigationBar.tintColor = .white
         navigationController?.pushViewController(fileView, animated: true)
     }
-   
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        SVProgressHUD.show(withStatus: "Please wait while your document is being downloaded".localized())
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        SVProgressHUD.dismiss()
+    }
     
 }
 

@@ -30,6 +30,7 @@ struct Hotspot : Decodable {
 struct HotspotObject : Decodable {
     var HotspotDocumentTypeID : String
     var HotspotDocumentTypeName : String
+    var HotspotExpression : String
     var HotspotNo : String
 }
 

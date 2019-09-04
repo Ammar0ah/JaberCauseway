@@ -16,7 +16,7 @@ class customButton : UIButton {
         self.layer.borderColor = UIColor(hexString: "#34BE9C").cgColor
         self.layer.borderWidth = 5
         self.layer.cornerRadius = 20
-        
+        self.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     override init(frame: CGRect) {
         super.init(frame: CGRect())
@@ -24,6 +24,12 @@ class customButton : UIButton {
     }
     required init?(coder aDecoder: NSCoder) {
        super.init(coder: aDecoder)
+    }
+    @IBInspectable var adjustsTitleFontSizeToFitWidth: Bool = false {
+        didSet {
+            
+            self.titleLabel?.adjustsFontSizeToFitWidth = adjustsTitleFontSizeToFitWidth
+        }
     }
     
 }

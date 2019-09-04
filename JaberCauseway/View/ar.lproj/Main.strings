@@ -1,12 +1,18 @@
 
+/* Class = "UILabel"; text = "Search Results"; ObjectID = "1an-uS-Rko"; */
+"1an-uS-Rko.text" = "Search Results";
+
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "3Oa-ay-nIZ"; */
 "3Oa-ay-nIZ.placeholder" = "Password";
 
-/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "7za-hz-0RA"; */
-"7za-hz-0RA.placeholder" = "User Name";
+/* Class = "UITextField"; placeholder = "Hotspot No"; ObjectID = "7za-hz-0RA"; */
+"7za-hz-0RA.placeholder" = "Hotspot No";
 
-/* Class = "UITextField"; text = "Hotspot No"; ObjectID = "7za-hz-0RA"; */
-"7za-hz-0RA.text" = "Hotspot No";
+/* Class = "UILabel"; text = "Discipline:"; ObjectID = "AwF-rR-MUn"; */
+"AwF-rR-MUn.text" = "Discipline:";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "DXs-j1-z7W"; */
+"DXs-j1-z7W.text" = "Detail";
 
 /* Class = "UILabel"; text = "Sheikh Jaber Causeway Project (RA 140)"; ObjectID = "FgW-L5-B6s"; */
 "FgW-L5-B6s.text" = "Sheikh Jaber Causeway Project (RA 140)";
@@ -17,20 +23,41 @@
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "HHR-xP-Nca"; */
 "HHR-xP-Nca.normalTitle" = "Login";
 
+/* Class = "UILabel"; text = "Search Results"; ObjectID = "Lu5-cl-BXP"; */
+"Lu5-cl-BXP.text" = "Search Results";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "MXg-P1-Pbk"; */
+"MXg-P1-Pbk.text" = "Type:";
+
 /* Class = "UIButton"; normalTitle = "عربي"; ObjectID = "PZu-we-bgd"; */
 "PZu-we-bgd.normalTitle" = "عربي";
+
+/* Class = "UILabel"; text = "Related Hotspots"; ObjectID = "Qlu-IK-ohS"; */
+"Qlu-IK-ohS.text" = "Related Hotspots";
 
 /* Class = "UITextField"; placeholder = "User Name"; ObjectID = "RJh-YH-2G8"; */
 "RJh-YH-2G8.placeholder" = "User Name";
 
-/* Class = "UITextField"; text = "Asset Group No"; ObjectID = "Y3m-hn-5Ub"; */
-"Y3m-hn-5Ub.text" = "رقم مرجع الأ";
+/* Class = "UILabel"; text = "Title"; ObjectID = "Rsp-3s-CFV"; */
+"Rsp-3s-CFV.text" = "Title";
 
-/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "xbU-0p-roM"; */
-"xbU-0p-roM.placeholder" = "User Name";
+/* Class = "UITextField"; placeholder = "Asset Group No"; ObjectID = "Y3m-hn-5Ub"; */
+"Y3m-hn-5Ub.placeholder" = "Asset Group No";
 
-/* Class = "UITextField"; text = "Document Name"; ObjectID = "xbU-0p-roM"; */
-"xbU-0p-roM.text" = "Document Name";
+/* Class = "UILabel"; text = "Title"; ObjectID = "gVo-IX-FS4"; */
+"gVo-IX-FS4.text" = "Title";
+
+/* Class = "UILabel"; text = "Related Hotspots"; ObjectID = "kJ1-B0-SnT"; */
+"kJ1-B0-SnT.text" = "Related Hotspots";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "tOH-29-0qZ"; */
+"tOH-29-0qZ.text" = "Subtitle";
+
+/* Class = "UITextField"; placeholder = "Document Name"; ObjectID = "tse-vi-F7r"; */
+"tse-vi-F7r.placeholder" = "Document Name";
+
+/* Class = "UITextField"; placeholder = "Document Name"; ObjectID = "xbU-0p-roM"; */
+"xbU-0p-roM.placeholder" = "Document Name";
 
 /* Class = "UIButton"; normalTitle = "English"; ObjectID = "xzd-wl-Brp"; */
 "xzd-wl-Brp.normalTitle" = "English";
