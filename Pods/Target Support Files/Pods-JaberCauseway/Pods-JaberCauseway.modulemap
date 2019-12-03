@@ -1,5 +1,5 @@
-framework module Pods_JaberCauseway {
-  umbrella header "Pods-JaberCauseway-umbrella.h"
+framework module Pods_jabercauseway {
+  umbrella header "Pods-jabercauseway-umbrella.h"
 
   export *
   module * { export * }

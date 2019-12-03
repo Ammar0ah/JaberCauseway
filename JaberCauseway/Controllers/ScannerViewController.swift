@@ -14,7 +14,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     @IBOutlet var backBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        backBtn.setTitle(backBtn.titleLabel?.text?.localized(), for: .normal)
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
         

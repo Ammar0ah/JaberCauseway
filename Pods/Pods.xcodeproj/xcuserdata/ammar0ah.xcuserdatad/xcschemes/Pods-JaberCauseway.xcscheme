@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E34DB436C04DCF48957E6AADA272810D"
-               BuildableName = "Pods_JaberCauseway.framework"
-               BlueprintName = "Pods-JaberCauseway"
+               BlueprintIdentifier = "5739C246B01A955068148B40F60547A5"
+               BuildableName = "Pods_jabercauseway.framework"
+               BlueprintName = "Pods-jabercauseway"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E34DB436C04DCF48957E6AADA272810D"
-            BuildableName = "Pods_JaberCauseway.framework"
-            BlueprintName = "Pods-JaberCauseway"
+            BlueprintIdentifier = "5739C246B01A955068148B40F60547A5"
+            BuildableName = "Pods_jabercauseway.framework"
+            BlueprintName = "Pods-jabercauseway"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

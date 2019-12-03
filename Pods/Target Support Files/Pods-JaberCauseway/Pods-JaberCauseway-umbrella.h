@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_JaberCausewayVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_JaberCausewayVersionString[];
+FOUNDATION_EXPORT double Pods_jabercausewayVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_jabercausewayVersionString[];
 

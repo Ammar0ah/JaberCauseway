@@ -24,29 +24,27 @@ class LoginViewController: UIViewController {
         view.addGestureRecognizer(tap)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
-    }
+        }
     
     override func viewWillAppear(_ animated: Bool) {
-        loginBttn.layer.borderWidth = 5
-        loginBttn.layer.borderColor = UIColor(hexString: "#34BE9CFF").cgColor
-        loginBttn.layer.cornerRadius = 20
-        userName.layer.borderWidth = 5
-        userName.layer.borderColor = UIColor(hexString: "#34BE9CFF").cgColor
-        userName.layer.cornerRadius = 15
-        password.layer.borderWidth = 5
-        password.layer.borderColor = UIColor(hexString: "#34BE9CFF").cgColor
-        password.layer.cornerRadius = 15
+        loginBttn.setGradientBackgroundCircle( colorTop: UIColor(hexString: "#41BCA6"), colorBottom: UIColor(hexString: "#306F86"))
+//        userName.layer.borderWidth = 5
+//        userName.layer.borderColor = UIColor(hexString: "#34BE9CFF").cgColor
+//        userName.layer.cornerRadius = 15
+//        password.layer.borderWidth = 5
+//        password.layer.borderColor = UIColor(hexString: "#34BE9CFF").cgColor
+//        password.layer.cornerRadius = 15
     }
     func localizeArabic(){
         userName.placeholder = userName.placeholder?.localized()
-        userName.placeHolderColor = .black
         password.placeholder = password.placeholder?.localized()
-        password.placeHolderColor = .black
         label.text = label.text?.localized()
         
-        loginBttn.setTitle(loginBttn.titleLabel?.text?.localized(), for: .normal)   
+        loginBttn.setTitle(loginBttn.titleLabel?.text?.localized(), for: .normal)
         
+        loginBttn.titleLabel?.adjustsFontSizeToFitWidth = true
+        userName.placeHolderColor = .white
+        password.placeHolderColor = .white
     }
     
     @IBAction func loginClicked(_ sender: Any) {

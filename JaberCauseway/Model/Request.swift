@@ -92,7 +92,6 @@ class Request {
     func getDisciplines(completion: @escaping () -> ()) {
         Alamofire.request(GET_DISCIPLINES, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { (response) in
-                
                 do {
                     self.discipline =  try JSONDecoder().decode(Discipline.self, from: response.data!)
                     completion()
@@ -104,7 +103,6 @@ class Request {
     func getHotspots(hotspotGroup : String , hotspotNo:String,completion: @escaping ()->() ){
         params["HotspotGroupNo"] = hotspotGroup
         params["HotspotNO"] = hotspotNo
-        
         Alamofire.request(GET_HOTSPOTS, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil)
             .responseJSON{ (response) in
                 if response.result.isSuccess{
@@ -120,9 +118,10 @@ class Request {
                 
         }
     }
-    func getDocuments(hotspotNo : String,completion: @escaping () -> ()){
+    func getDocuments(hotspotNo : String,docName: String = "" , completion: @escaping () -> ()){
         params["HotspotNo"] = hotspotNo
-        
+        params["DocumentName"] = docName
+        print(docName)
         Alamofire.request(GET_DOCUMENTS, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { (response) in
                 if response.result.isSuccess{

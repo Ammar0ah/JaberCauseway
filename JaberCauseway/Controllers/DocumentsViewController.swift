@@ -13,42 +13,56 @@ class DocumentsViewController: UIViewController  , QRcode{
     @IBOutlet var backItem: UIBarButtonItem!
     @IBOutlet var documentSearchLbl: UILabel!
     
+    @IBOutlet var searchBtn: UIButton!
     @IBOutlet private var assetGroup : UITextField!
     @IBOutlet private var hostpot : UITextField!
     @IBOutlet private var document : UITextField!
     var reqTextField : UITextField?
     
+    @IBOutlet var backView: UIView!
     
-     let request = Request()
+ //   @IBOutlet var backImg: UIImageView!
+    let request = Request()
     override func viewDidLoad() {
         super.viewDidLoad()
-               rtl()
+//               rtl()
         if ISARABIC {
            arrangeViewForArabic()
         }
+        let backBtn = UIBarButtonItem()
+        backBtn.title = "Exit".localized()
+        navigationController?.navigationBar.backItem?.rightBarButtonItem = backBtn
        reqTextField = assetGroup
-      
-       
+        searchBtn.setTitle(searchBtn.titleLabel?.text!.localized(), for: .normal)
+       // backImg.setGradientBackgroundCircle()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapEvent))
         self.view.addGestureRecognizer(gesture)
+         backView.setGradientBackgroundCircle()
+        searchBtn.setGradientBackgroundCircle( colorTop: UIColor(hexString: "#41BCA6"), colorBottom: UIColor(hexString: "#306F86"))
+        if #available(iOS 13.0, *){
+            overrideUserInterfaceStyle = .light
+        }
+        
+        
     }
     func arrangeViewForArabic(){
      
-        if ISARABIC{
-            navigationItem.rightBarButtonItem?.image = UIImage(named: "ic_backitemleft")
-        }
+//        if ISARABIC{
+//            navigationItem.rightBarButtonItem?.image = UIImage(named: "ic_backitemleft")
+//        }
       
-        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
+//        self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
         assetGroup.placeholder = assetGroup.placeholder?.localized()
-        assetGroup.placeHolderColor = .black
+        assetGroup.placeHolderColor = .white
         hostpot.placeholder = hostpot.placeholder?.localized()
-        hostpot.placeHolderColor = .black
+        hostpot.placeHolderColor = .white
         document.placeholder = document.placeholder?.localized()
-        document.placeHolderColor = .black
+        document.placeHolderColor = .white
         documentSearchLbl.text = documentSearchLbl.text?.localized()
+      
     }
   
     
@@ -64,15 +78,31 @@ class DocumentsViewController: UIViewController  , QRcode{
     }
     
     @IBAction func searchClicked(_ sender: Any) {
-        SVProgressHUD.show()
+        SVProgressHUD.show(withStatus:"Please wait".localized())
        
-
-        if reqTextField == hostpot ||  reqTextField == assetGroup {
+        if let text = document.text{
+            if text.isEmpty{
+              getHotspotsRequest()
+            return
+            }
+        }
+        
+        if let text = assetGroup.text,let text1 = hostpot.text{
+            if text.isEmpty && text1.isEmpty{
+                request.getDocuments(hotspotNo: hostpot.text ?? "",docName: document.text ?? ""){
+                    SVProgressHUD.dismiss()
+                    self.performSegue(withIdentifier: "documentsearchSegue", sender: self)
+                }
+                return
+            }
+        }
+        
+        if (reqTextField == hostpot ||  reqTextField == assetGroup){
          getHotspotsRequest()
         }
-        else if reqTextField == document{
+        else if reqTextField == document {
       
-        request.getDocuments(hotspotNo: hostpot.text ?? ""){
+        request.getDocuments(hotspotNo: hostpot.text ?? "",docName: document.text ?? ""){
             SVProgressHUD.dismiss()
           self.performSegue(withIdentifier: "documentsearchSegue", sender: self)
         }
@@ -84,7 +114,7 @@ class DocumentsViewController: UIViewController  , QRcode{
     }
     func getQRcode(code: String) {
         SVProgressHUD.show()
-        hostpot.text = code
+        assetGroup.text = code
         print("Code" , code)
         getHotspotsRequest()
     }

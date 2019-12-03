@@ -21,17 +21,23 @@
 		AC82C29822FE982500181D72 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82C29722FE982500181D72 /* Requests.swift */; };
 		AC82C29A22FE98AE00181D72 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82C29922FE98AE00181D72 /* Login.swift */; };
 		AC82C29C22FEE2EC00181D72 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82C29B22FEE2EC00181D72 /* DocumentsViewController.swift */; };
+		ACD4385523499D0E00C7204B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4385423499D0E00C7204B /* ViewExtension.swift */; };
+		ACD438572349D23300C7204B /* GillSansMTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ACD438562349D23300C7204B /* GillSansMTPro-Bold.otf */; };
 		ACD4EE1222FFDAC400460B04 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4EE1122FFDAC400460B04 /* Extensions.swift */; };
 		ACD4EE1422FFDC5400460B04 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4EE1322FFDC5400460B04 /* DetailsViewController.swift */; };
 		ACD9F3972301C81D00F6C2D6 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9F3962301C81D00F6C2D6 /* ItemDetailsViewController.swift */; };
 		ACE4B32E230292D900CB0E11 /* customNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4B32D230292D900CB0E11 /* customNavigationController.swift */; };
 		ACE6E1D522FFB2E900519368 /* RTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6E1D422FFB2E900519368 /* RTL.swift */; };
+		D1D598E5FFD853A95228ECF0 /* Pods_jabercauseway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3F6175B102409D7019245D /* Pods_jabercauseway.framework */; };
 		DC5355BA7F48A8AB9D6C3F34 /* Pods_JaberCauseway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A921B34B45EF3AEA063897C /* Pods_JaberCauseway.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05754D0C69218F487088E742 /* Pods-JaberCauseway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaberCauseway.release.xcconfig"; path = "Target Support Files/Pods-JaberCauseway/Pods-JaberCauseway.release.xcconfig"; sourceTree = "<group>"; };
 		4A921B34B45EF3AEA063897C /* Pods_JaberCauseway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaberCauseway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3F6175B102409D7019245D /* Pods_jabercauseway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jabercauseway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADDC674B084BE36DADDBEAE /* Pods-jabercauseway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jabercauseway.debug.xcconfig"; path = "Target Support Files/Pods-jabercauseway/Pods-jabercauseway.debug.xcconfig"; sourceTree = "<group>"; };
+		A04AE3FF34B1D46BFAF01019 /* Pods-jabercauseway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jabercauseway.release.xcconfig"; path = "Target Support Files/Pods-jabercauseway/Pods-jabercauseway.release.xcconfig"; sourceTree = "<group>"; };
 		AC250BE822FF473D00F9694A /* customTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
 		AC250BEC22FF5E5100F9694A /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		AC2F3D9F23005EC200765B2C /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 		AC82C29722FE982500181D72 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		AC82C29922FE98AE00181D72 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		AC82C29B22FEE2EC00181D72 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		ACD4385423499D0E00C7204B /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		ACD438562349D23300C7204B /* GillSansMTPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GillSansMTPro-Bold.otf"; sourceTree = "<group>"; };
 		ACD4EE1122FFDAC400460B04 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ACD4EE1322FFDC5400460B04 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		ACD9F3962301C81D00F6C2D6 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5355BA7F48A8AB9D6C3F34 /* Pods_JaberCauseway.framework in Frameworks */,
+				D1D598E5FFD853A95228ECF0 /* Pods_jabercauseway.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4A921B34B45EF3AEA063897C /* Pods_JaberCauseway.framework */,
+				5A3F6175B102409D7019245D /* Pods_jabercauseway.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +93,8 @@
 			children = (
 				D6D2F5B5772F8DE3A2A27019 /* Pods-JaberCauseway.debug.xcconfig */,
 				05754D0C69218F487088E742 /* Pods-JaberCauseway.release.xcconfig */,
+				6ADDC674B084BE36DADDBEAE /* Pods-jabercauseway.debug.xcconfig */,
+				A04AE3FF34B1D46BFAF01019 /* Pods-jabercauseway.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -94,6 +106,7 @@
 				AC250BEC22FF5E5100F9694A /* customButton.swift */,
 				ACD4EE1122FFDAC400460B04 /* Extensions.swift */,
 				ACE4B32D230292D900CB0E11 /* customNavigationController.swift */,
+				ACD4385423499D0E00C7204B /* ViewExtension.swift */,
 			);
 			name = layout;
 			path = ../layout;
@@ -165,6 +178,7 @@
 		AC82C28E22FE822B00181D72 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				ACD438562349D23300C7204B /* GillSansMTPro-Bold.otf */,
 				AC6A705222FDBDD500A82458 /* AppDelegate.swift */,
 				AC6A705922FDBDD600A82458 /* Assets.xcassets */,
 				AC6A705B22FDBDD600A82458 /* LaunchScreen.storyboard */,
@@ -237,6 +251,7 @@
 				AC6A705D22FDBDD600A82458 /* LaunchScreen.storyboard in Resources */,
 				AC82C29322FE88D400181D72 /* Localizable.strings in Resources */,
 				AC6A705A22FDBDD600A82458 /* Assets.xcassets in Resources */,
+				ACD438572349D23300C7204B /* GillSansMTPro-Bold.otf in Resources */,
 				AC6A705822FDBDD500A82458 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +274,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JaberCauseway-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-jabercauseway-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -274,7 +289,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JaberCauseway/Pods-JaberCauseway-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-jabercauseway/Pods-jabercauseway-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
@@ -287,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JaberCauseway/Pods-JaberCauseway-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jabercauseway/Pods-jabercauseway-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -303,6 +318,7 @@
 				ACE4B32E230292D900CB0E11 /* customNavigationController.swift in Sources */,
 				AC82C29A22FE98AE00181D72 /* Login.swift in Sources */,
 				ACD4EE1422FFDC5400460B04 /* DetailsViewController.swift in Sources */,
+				ACD4385523499D0E00C7204B /* ViewExtension.swift in Sources */,
 				AC2F3DA023005EC200765B2C /* ScannerViewController.swift in Sources */,
 				ACE6E1D522FFB2E900519368 /* RTL.swift in Sources */,
 				AC250BE922FF473D00F9694A /* customTextField.swift in Sources */,
@@ -467,10 +483,11 @@
 		};
 		AC6A706222FDBDD600A82458 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6D2F5B5772F8DE3A2A27019 /* Pods-JaberCauseway.debug.xcconfig */;
+			baseConfigurationReference = 6ADDC674B084BE36DADDBEAE /* Pods-jabercauseway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.1.14;
 				DEVELOPMENT_TEAM = R74AP992LY;
 				INFOPLIST_FILE = JaberCauseway/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -481,16 +498,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fouad.penguen.sheikh-jaber-casueway";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AC6A706322FDBDD600A82458 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05754D0C69218F487088E742 /* Pods-JaberCauseway.release.xcconfig */;
+			baseConfigurationReference = A04AE3FF34B1D46BFAF01019 /* Pods-jabercauseway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.1.14;
 				DEVELOPMENT_TEAM = R74AP992LY;
 				INFOPLIST_FILE = JaberCauseway/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -501,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fouad.penguen.sheikh-jaber-casueway";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
