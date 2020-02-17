@@ -1,3 +1,3 @@
 # JaberCauseway
-This repo Has move to GitLab , For more info Contact me on: 
+This repo has move to GitLab , For more info Contact me on: 
 ### ammar0ah@gmail.com
